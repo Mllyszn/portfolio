@@ -6,14 +6,14 @@ const Experience = () => {
     {
       company: "Christelijk College Zeist",
       period: "2021 - 2023",
-      description: "Execute visualit creating creatrekkie design at code/reall ger/project",
-      tech: "Expert in React.js and Mangable"
+      description: "Uitvoeren van visueel creërend creatrekkie ontwerp bij code/project",
+      tech: "Gestudeerd in media marketing op het Christelijk College Zeist."
     },
     {
       company: "Grafisch Lyceum Utrecht",
       period: "2023 - Present",
       description: "Constantly servitud and development running fataktos",
-      tech: "Expert in React and Reaus"
+      tech: "Expertise in HTML, CSS, JavaScript en React."
     }
   ];
 
@@ -48,26 +48,26 @@ const Experience = () => {
           </div>
           
           <div>
-            <h2 className="text-4xl font-bold mb-8">Laten we iets samen maken!</h2>
+            <h2 className="text-4xl font-bold mb-8">neem contact met mij op!</h2>
             
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-300 mb-2">Name</label>
+                <label htmlFor="name" className="block text-gray-300 mb-2">Naam</label>
                 <input 
                   type="text" 
                   id="name"
                   className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="Your name"
+                  placeholder="Uw naam"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-gray-300 mb-2">Email</label>
+                <label htmlFor="email" className="block text-gray-300 mb-2">E-mail</label>
                 <input 
                   type="email" 
                   id="email"
                   className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="your.email@example.com"
+                  placeholder="jouw.email@example.com"
                 />
               </div>
               
@@ -77,7 +77,7 @@ const Experience = () => {
                   id="message"
                   rows={5}
                   className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="typ hier uw bericht....."
                 ></textarea>
               </div>
               

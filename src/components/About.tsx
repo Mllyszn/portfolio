@@ -9,7 +9,7 @@ const About = () => {
           <div className="flex justify-center lg:justify-start">
             <div className="w-64 h-64 rounded-full overflow-hidden bg-slate-700">
               <img
-                src="C:\Users\melvi\OneDrive\Documenten\school folder\progammer folder\module_projects\portfolio\src\assets\img\me.jpg"
+                src="\src\assets\img\me.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

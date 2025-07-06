@@ -45,7 +45,7 @@ const Projects = () => {
           <h2 className="text-4xl font-bold mb-4">Projects</h2>
           <p className="text-gray-300 text-lg">Some of the projects I have worked on</p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-slate-800 rounded-xl p-6 hover:bg-slate-750 transition-colors duration-200 group">
@@ -63,19 +63,26 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              
+
               <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
               <p className="text-gray-300 mb-6 text-sm leading-relaxed">{project.description}</p>
-              
+
               <div className="flex gap-3">
-                <button className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-sm">
+                <a href="/">
                   <ExternalLink className="w-4 h-4" />
                   Live website
-                </button>
-                <button className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors text-sm">
+                </a>
+                {/* <button className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-sm">
+                  <ExternalLink className="w-4 h-4" />
+                  Live website
+                </button> */}
+                <a href="/">
+                  <Github className="w-4 h-4" />
+                  View Github</a>
+                {/* <button className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors text-sm">
                   <Github className="w-4 h-4" />
                   View code
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

@@ -1,5 +1,8 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import spiegelspelVideo from '../assets/vid/spiegelspel.mp4';
+import plaformerImg from '../assets/img/platformer-game.png';
+
 
 const Projects = () => {
   const projects = [
@@ -31,27 +34,34 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              id={`project-${project.id}`}
-              className="relative bg-slate-800 rounded-xl p-6 hover:bg-slate-750 transition-colors duration-200 group border border-slate-700"
+
+          {projects.map((project, index) => (
+            <div key={project.id} id={`project-${project.id}`} className="relative bg-slate-800 rounded-xl p-6 hover:bg-slate-750 transition-colors duration-200 group border border-slate-700"
             >
-              {project.id === "project-focus6" ? (
+              {index === 0 ? (
                 <video
-                  src="public/assets/vid/spiegelspel.mp4" // Replace with your video file path or URL
+                  src={spiegelspelVideo}
                   controls
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 >
                   Your browser does not support the video tag.
                 </video>
+              ) : index === 1 ? (
+                <img
+                  src={plaformerImg}
+                  alt="Platformer game"
+                  className="w-full h-40 object-cover rounded-lg mb-4"
+                />
               ) : (
                 <img
-                  src="https://placehold.co/400x200?text=Project+Image"
-                  alt="Project placeholder"
+                  src="https://placehold.co/400x200?text=Coming+Soon"
+                  alt="Placeholder"
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
               )}
+
+
+
               <span className="absolute top-4 right-4 bg-indigo-500 text-xs px-3 py-1 rounded-full text-white font-medium">
                 {project.tag}
               </span>

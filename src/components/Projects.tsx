@@ -2,6 +2,7 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import spiegelspelVideo from '../assets/vid/spiegelspel.mp4';
 import plaformerImg from '../assets/img/platformer-game.png';
+import happyherbivoreVideo from '../assets/vid/happyherbs.mp4'; // Placeholder image for Happy Herbivore
 
 
 const Projects = () => {
@@ -53,11 +54,13 @@ const Projects = () => {
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
               ) : (
-                <img
-                  src="https://placehold.co/400x200?text=Coming+Soon"
-                  alt="Placeholder"
+                <video
+                  src={happyherbivoreVideo}
+                  controls
                   className="w-full h-40 object-cover rounded-lg mb-4"
-                />
+                >
+                  Your browser does not support the video tag.
+                </video>
               )}
 
 

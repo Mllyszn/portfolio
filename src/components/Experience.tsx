@@ -6,24 +6,24 @@ const Experience = () => {
     {
       company: "Christelijk College Zeist",
       period: "2021 - 2023",
-      description: "Uitvoeren van visueel creërend creatrekkie ontwerp bij code/project",
-      tech: "Gestudeerd in media marketing op het Christelijk College Zeist."
+      description: "Gestudeerd in dienstverlening & producten op het Christelijk College Zeist.",
+      tech: "Leren over hoe je media kunt gebruiken en hoe je het kan toepassen in de praktijk."
     },
     {
       company: "Grafisch Lyceum Utrecht",
       period: "2023 - Present",
-      description: "Constantly servitud and development running fataktos",
-      tech: "Expertise in HTML, CSS, JavaScript en React."
+      description: "Studeren aan het Grafisch Lyceum Utrecht in de richting van software/webdevelopment.",
+      tech: "Geleerd om om te gaan met  HTML, CSS, JavaScript en React."
     }
   ];
 
   return (
-    <section className="bg-slate-800 text-white py-20">
+    <section id='Contact' className="bg-slate-800 text-white py-20">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-4xl font-bold mb-4">Ervaring</h2>
-            <p className="text-gray-300 text-lg mb-12">Een aantal van de projecten waar ik aan heb gewerkt</p>
+            <h2 className="text-4xl font-bold mb-4">Loopbaan</h2>
+            <p className="text-gray-300 text-lg mb-12">Mijn loopbaan van scholen & studie</p>
             
             <div className="space-y-8">
               {experiences.map((exp, index) => (
@@ -48,7 +48,7 @@ const Experience = () => {
           </div>
           
           <div>
-            <h2 className="text-4xl font-bold mb-8">neem contact met mij op!</h2>
+            <h2 className="text-4xl font-bold mb-8">Neem contact met mij op!</h2>
             
             <form className="space-y-6">
               <div>
@@ -91,6 +91,11 @@ const Experience = () => {
           </div>
         </div>
       </div>
+      <footer>
+        <div className="text-center text-gray-400 mt-12">
+          <p>&copy; {new Date().getFullYear()} Melvin Lieuw. Alle rechten voorbehouden.</p>
+        </div>
+      </footer>
     </section>
   );
 };

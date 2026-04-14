@@ -8,17 +8,16 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-2">
-              <p className="text-gray-300 text-lg">Melvin Lieuw, Web Developer in opleiding</p>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Student Grafisch Lyceum Utrecht
+              <p className="text-4xl lg:text-6xl font-bold leading-tight ">Hoi, ik ben Melvin Lieuw</p>
+              <h1 className="text-gray-300 text-lg">
+                Web Developer in opleiding, student bij het Grafisch Lyceum Utrecht
               </h1>
             </div>
 
-            <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
-              Ik studeer in webontwikkeling. Momenteel zit ik in mijn 2e jaar
-              van Webontwikkeling op het Grafisch Lyceum Utrecht.
-              {/* Ik studeer in webontwikkeling. Ik ben momenteel in mijn 2de jaar
-              van Webdevelopment op Grafisch Lyceum Utrecht. */}
+            <p className="text-gray-300 text-mid leading-relaxed max-w-lg">
+              Ik ben gepassioneerd over het creëren vandynamische en
+              responsieve websites die niet alleen functioneel zijn, maar ook visueel aantrekkelijk.
+              Mijn doel is om mijn vaardigheden verder te ontwikkelen en bij te dragen aan innovatieve webprojecten.
             </p>
 
             <div className="flex flex-wrap gap-4">

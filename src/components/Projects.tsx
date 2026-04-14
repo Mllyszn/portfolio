@@ -52,8 +52,8 @@ const Projects = () => {
                   src={plaformerImg}
                   alt="Platformer game"
                   className="w-full h-40 object-cover rounded-lg mb-4"
-                />
-              ) : (
+                  />
+              ) :  (
                 <video
                   src={happyherbivoreVideo}
                   controls

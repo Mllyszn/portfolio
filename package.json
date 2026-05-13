@@ -1,7 +1,7 @@
 {
   "name": "melvin-portfolio-v2",
   "version": "1.0.0",
-  "description": "Open `index.html` in any browser — no build tools or installs needed.",
+  "description": "Open `index.html`",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

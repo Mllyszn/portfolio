@@ -1,0 +1,85 @@
+/*
+  skills.css
+  ─────────────────────────────────────────────
+  Tech stack section with three skill cards:
+  frontend (coral), backend (violet), tools (teal).
+  Edit the top-border color per card using the
+  .fe / .be / .tools modifier classes.
+*/
+
+.skills-section {
+  background: var(--bg2);
+}
+
+/* ── Card grid ────────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+/* ── Individual card ──────────────────────── */
+.skill-card {
+  background: var(--bg3);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+/* Colored top accent bar */
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.skill-card.fe::before    { background: var(--c1); }
+.skill-card.be::before    { background: var(--c2); }
+.skill-card.tools::before { background: var(--c3); }
+
+.skill-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.skill-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ── Skill tags ───────────────────────────── */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Default tag */
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 0.5px solid var(--border);
+  color: var(--muted);
+}
+
+/* Highlighted / favourite tag */
+.tag.hot {
+  border-color: rgba(255, 92, 53, 0.4);
+  color: var(--c1);
+  background: rgba(255, 92, 53, 0.07);
+}
